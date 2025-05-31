@@ -4,43 +4,77 @@ import { Button } from "@/components/ui/button";
 
 const Hero = () => {
   return (
-    <section className="relative bg-gradient-to-r from-blue-600 to-blue-800 text-white py-20 px-4">
-      <div className="max-w-6xl mx-auto text-center">
-        <div className="mb-8">
-          <h1 className="text-5xl md:text-6xl font-bold mb-4 tracking-tight">
-            Dr. Thomas James
-          </h1>
-          <p className="text-xl md:text-2xl text-blue-100 mb-2">
-            Consultant Gastroenterologist
-          </p>
-          <div className="flex items-center justify-center text-blue-100 mb-8">
-            <MapPin className="w-5 h-5 mr-2" />
-            <span>HITECH Polyclinic KP Vallon Rd, Kadavanthra, Kochi, Kerala</span>
-          </div>
-        </div>
-        
-        <div className="grid md:grid-cols-2 gap-6 max-w-2xl mx-auto mb-8">
-          <div className="bg-white/10 backdrop-blur-sm rounded-lg p-6">
-            <Calendar className="w-8 h-8 mx-auto mb-3 text-blue-200" />
-            <h3 className="text-lg font-semibold mb-2">Consulting Hours</h3>
-            <p className="text-blue-100">10:00 AM - 1:00 PM</p>
-            <p className="text-blue-100">All days except Sunday</p>
+    <section className="relative bg-gradient-to-br from-blue-600 via-blue-700 to-blue-900 text-white py-24 px-4 overflow-hidden">
+      {/* Background decoration */}
+      <div className="absolute inset-0 bg-gradient-to-r from-blue-600/20 to-transparent"></div>
+      <div className="absolute top-0 right-0 w-96 h-96 bg-white/5 rounded-full -translate-y-48 translate-x-48"></div>
+      <div className="absolute bottom-0 left-0 w-64 h-64 bg-white/5 rounded-full translate-y-32 -translate-x-32"></div>
+      
+      <div className="max-w-6xl mx-auto relative z-10">
+        <div className="grid lg:grid-cols-2 gap-12 items-center">
+          {/* Left side - Doctor info */}
+          <div className="text-center lg:text-left">
+            <div className="mb-8">
+              <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold mb-6 tracking-tight bg-gradient-to-r from-white to-blue-100 bg-clip-text text-transparent">
+                Dr. Thomas James
+              </h1>
+              <p className="text-2xl md:text-3xl text-blue-100 mb-4 font-light">
+                Consultant Gastroenterologist
+              </p>
+              <div className="flex items-center justify-center lg:justify-start text-blue-100 mb-8">
+                <MapPin className="w-5 h-5 mr-2 flex-shrink-0" />
+                <span className="text-lg">HITECH Polyclinic, KP Vallon Rd, Kadavanthra, Kochi</span>
+              </div>
+              <div className="inline-block bg-gradient-to-r from-blue-500 to-blue-400 px-6 py-2 rounded-full">
+                <span className="text-white font-semibold text-lg">25+ Years Experience</span>
+              </div>
+            </div>
+            
+            <Button 
+              size="lg" 
+              className="bg-gradient-to-r from-green-500 to-green-600 hover:from-green-600 hover:to-green-700 text-white font-semibold px-10 py-4 text-xl rounded-full shadow-xl hover:shadow-2xl transform hover:scale-105 transition-all duration-300"
+            >
+              <Phone className="w-6 h-6 mr-3" />
+              Book Appointment
+            </Button>
           </div>
           
-          <div className="bg-white/10 backdrop-blur-sm rounded-lg p-6">
-            <Phone className="w-8 h-8 mx-auto mb-3 text-blue-200" />
-            <h3 className="text-lg font-semibold mb-2">Contact</h3>
-            <p className="text-blue-100">9400339999</p>
-            <p className="text-blue-100">9400339998</p>
+          {/* Right side - Doctor photo and info cards */}
+          <div className="flex flex-col items-center space-y-8">
+            {/* Doctor Photo Placeholder */}
+            <div className="relative">
+              <div className="w-80 h-80 rounded-full bg-gradient-to-br from-white/20 to-white/10 backdrop-blur-sm border border-white/20 flex items-center justify-center shadow-2xl">
+                <div className="text-center text-white/70">
+                  <div className="w-24 h-24 mx-auto mb-4 rounded-full bg-white/20 flex items-center justify-center">
+                    <span className="text-4xl">👨‍⚕️</span>
+                  </div>
+                  <p className="text-lg font-medium">Doctor Photo</p>
+                  <p className="text-sm">Coming Soon</p>
+                </div>
+              </div>
+              {/* Decorative rings */}
+              <div className="absolute -inset-4 rounded-full border border-white/10"></div>
+              <div className="absolute -inset-8 rounded-full border border-white/5"></div>
+            </div>
+            
+            {/* Info Cards */}
+            <div className="grid md:grid-cols-2 gap-4 w-full max-w-md">
+              <div className="bg-white/15 backdrop-blur-md rounded-2xl p-6 border border-white/20 hover:bg-white/20 transition-all duration-300 shadow-xl">
+                <Calendar className="w-8 h-8 mx-auto mb-3 text-blue-200" />
+                <h3 className="text-lg font-semibold mb-2 text-center">Hours</h3>
+                <p className="text-blue-100 text-center text-sm">10:00 AM - 1:00 PM</p>
+                <p className="text-blue-100 text-center text-sm">Except Sunday</p>
+              </div>
+              
+              <div className="bg-white/15 backdrop-blur-md rounded-2xl p-6 border border-white/20 hover:bg-white/20 transition-all duration-300 shadow-xl">
+                <Phone className="w-8 h-8 mx-auto mb-3 text-blue-200" />
+                <h3 className="text-lg font-semibold mb-2 text-center">Contact</h3>
+                <p className="text-blue-100 text-center text-sm">9400339999</p>
+                <p className="text-blue-100 text-center text-sm">9400339998</p>
+              </div>
+            </div>
           </div>
         </div>
-        
-        <Button 
-          size="lg" 
-          className="bg-white text-blue-800 hover:bg-blue-50 font-semibold px-8 py-3 text-lg"
-        >
-          Book Appointment
-        </Button>
       </div>
     </section>
   );
