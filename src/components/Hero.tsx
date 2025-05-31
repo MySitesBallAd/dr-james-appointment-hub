@@ -37,13 +37,15 @@ const Hero = () => {
               </div>
             </div>
             
-            <Button 
-              size="lg" 
-              className="bg-gradient-to-r from-green-500 to-green-600 hover:from-green-600 hover:to-green-700 text-white font-semibold px-10 py-4 text-xl rounded-full shadow-xl hover:shadow-2xl transform hover:scale-105 transition-all duration-300"
-            >
-              <Phone className="w-6 h-6 mr-3" />
-              Book Appointment
-            </Button>
+            <a href="tel:+919400339999">
+              <Button 
+                size="lg" 
+                className="bg-gradient-to-r from-green-500 to-green-600 hover:from-green-600 hover:to-green-700 text-white font-semibold px-10 py-4 text-xl rounded-full shadow-xl hover:shadow-2xl transform hover:scale-105 transition-all duration-300"
+              >
+                <Phone className="w-6 h-6 mr-3" />
+                Book Appointment
+              </Button>
+            </a>
           </div>
           
           {/* Right side - Doctor photo and info cards */}
@@ -74,8 +76,16 @@ const Hero = () => {
               <div className="bg-white/15 backdrop-blur-md rounded-2xl p-6 border border-white/20 hover:bg-white/20 transition-all duration-300 shadow-xl">
                 <Phone className="w-8 h-8 mx-auto mb-3 text-blue-200" />
                 <h3 className="text-lg font-semibold mb-2 text-center">Contact</h3>
-                <p className="text-blue-100 text-center text-sm">9400339999</p>
-                <p className="text-blue-100 text-center text-sm">9400339998</p>
+                <p className="text-blue-100 text-center text-sm">
+                  <a href="tel:+919400339999" className="hover:underline hover:text-blue-300">
+                    +91 9400339999
+                  </a>
+                </p>
+                <p className="text-blue-100 text-center text-sm">
+                  <a href="tel:+919400339998" className="hover:underline hover:text-blue-300">
+                    +91 9400339998
+                  </a>                  
+                </p>
               </div>
             </div>
           </div>
