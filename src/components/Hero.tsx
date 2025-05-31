@@ -52,7 +52,7 @@ const Hero = () => {
           <div className="flex flex-col items-center space-y-8">
             {/* Doctor Photo */}
             <div className="relative">
-              <div className="w-80 h-80 rounded-full overflow-hidden shadow-2xl border-4 border-white/20">
+              <div className="w-100 h-100 rounded-full overflow-hidden shadow-2xl border-4 border-white/20">
                 <img 
                   src="/lovable-uploads/ff73bdd9-4e0a-4253-b879-580cfd11066b.png" 
                   alt="Dr. Thomas James - Consultant Gastroenterologist"
