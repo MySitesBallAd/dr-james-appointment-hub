@@ -30,7 +30,14 @@ const Contact = () => {
             </CardHeader>
             <CardContent className="p-8">
               <div className="space-y-2">
+                <a
+                  href="https://g.co/kgs/LoZ8EmS"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-gray-800 text-xl font-semibold hover:text-blue-300"
+                >
                 <p className="text-gray-800 text-xl font-semibold">HITECH Polyclinic</p>
+                </a>
                 <p className="text-gray-700 text-lg">KP Vallon Road</p>
                 <p className="text-gray-700 text-lg">Kadavanthra, Kochi</p>
                 <p className="text-gray-700 text-lg">Kerala, India</p>

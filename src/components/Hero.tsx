@@ -24,7 +24,7 @@ const Hero = () => {
               <div className="flex items-center justify-center lg:justify-start text-blue-100 mb-8">
                 <MapPin className="w-5 h-5 mr-2 flex-shrink-0" />
                 <a
-                  href="https://www.google.com/maps?q=HITECH+Polyclinic,+KP+Vallon+Rd,+Kadavanthra,+Kochi"
+                  href="https://g.co/kgs/LoZ8EmS"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="text-lg underline hover:text-blue-300"
