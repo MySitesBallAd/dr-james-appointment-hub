@@ -23,7 +23,14 @@ const Hero = () => {
               </p>
               <div className="flex items-center justify-center lg:justify-start text-blue-100 mb-8">
                 <MapPin className="w-5 h-5 mr-2 flex-shrink-0" />
-                <span className="text-lg">HITECH Polyclinic, KP Vallon Rd, Kadavanthra, Kochi</span>
+                <a
+                  href="https://www.google.com/maps?q=HITECH+Polyclinic,+KP+Vallon+Rd,+Kadavanthra,+Kochi"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-lg underline hover:text-blue-300"
+                >
+                  HITECH Polyclinic, KP Vallon Rd, Kadavanthra, Kochi
+                </a>
               </div>
               <div className="inline-block bg-gradient-to-r from-blue-500 to-blue-400 px-6 py-2 rounded-full">
                 <span className="text-white font-semibold text-lg">25+ Years Experience</span>
