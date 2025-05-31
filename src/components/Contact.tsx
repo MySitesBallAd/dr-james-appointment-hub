@@ -75,7 +75,7 @@ const Contact = () => {
                   size="lg"
                 >
                   <Phone className="w-6 h-6 mr-3" />
-                  9400339999
+                  +91 9400339999
                 </Button>
                 <Button 
                   onClick={() => handlePhoneCall('9400339998')}
@@ -84,7 +84,7 @@ const Contact = () => {
                   size="lg"
                 >
                   <Phone className="w-6 h-6 mr-3" />
-                  9400339998
+                  +91 9400339998
                 </Button>
               </div>
               <div className="mt-8 p-4 bg-green-50 rounded-xl">
