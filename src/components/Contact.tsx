@@ -70,7 +70,7 @@ const Contact = () => {
             <CardContent className="p-10">
               <div className="space-y-6">
                 <Button 
-                  onClick={() => handlePhoneCall('9400339999')}
+                  onClick={() => handlePhoneCall('+91 9400339999')}
                   className="w-full bg-gradient-to-r from-green-600 to-green-700 hover:from-green-700 hover:to-green-800 text-white text-xl py-8 rounded-2xl shadow-xl hover:shadow-2xl transform hover:scale-105 transition-all duration-300"
                   size="lg"
                 >
@@ -78,7 +78,7 @@ const Contact = () => {
                   +91 9400339999
                 </Button>
                 <Button 
-                  onClick={() => handlePhoneCall('9400339998')}
+                  onClick={() => handlePhoneCall('+91 9400339998')}
                   variant="outline"
                   className="w-full border-2 border-green-600 text-green-700 hover:bg-green-50 text-xl py-8 rounded-2xl shadow-lg hover:shadow-xl transform hover:scale-105 transition-all duration-300"
                   size="lg"
