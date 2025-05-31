@@ -41,16 +41,14 @@ const Hero = () => {
           
           {/* Right side - Doctor photo and info cards */}
           <div className="flex flex-col items-center space-y-8">
-            {/* Doctor Photo Placeholder */}
+            {/* Doctor Photo */}
             <div className="relative">
-              <div className="w-80 h-80 rounded-full bg-gradient-to-br from-white/20 to-white/10 backdrop-blur-sm border border-white/20 flex items-center justify-center shadow-2xl">
-                <div className="text-center text-white/70">
-                  <div className="w-24 h-24 mx-auto mb-4 rounded-full bg-white/20 flex items-center justify-center">
-                    <span className="text-4xl">👨‍⚕️</span>
-                  </div>
-                  <p className="text-lg font-medium">Doctor Photo</p>
-                  <p className="text-sm">Coming Soon</p>
-                </div>
+              <div className="w-80 h-80 rounded-full overflow-hidden shadow-2xl border-4 border-white/20">
+                <img 
+                  src="/lovable-uploads/ff73bdd9-4e0a-4253-b879-580cfd11066b.png" 
+                  alt="Dr. Thomas James - Consultant Gastroenterologist"
+                  className="w-full h-full object-cover"
+                />
               </div>
               {/* Decorative rings */}
               <div className="absolute -inset-4 rounded-full border border-white/10"></div>
