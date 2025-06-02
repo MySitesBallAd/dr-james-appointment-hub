@@ -82,8 +82,8 @@ const Hero = () => {
                   </a>
                 </p>
                 <p className="text-blue-100 text-center text-sm">
-                  <a href="tel:+919400339998" className="hover:underline hover:text-blue-300">
-                    +91 9400339998
+                  <a href="tel:+8281597426" className="hover:underline hover:text-blue-300">
+                    +91 8281597426
                   </a>                  
                 </p>
               </div>

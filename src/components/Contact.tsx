@@ -85,13 +85,13 @@ const Contact = () => {
                   +91 9400339999
                 </Button>
                 <Button 
-                  onClick={() => handlePhoneCall('+91 9400339998')}
+                  onClick={() => handlePhoneCall('+91 8281597426')}
                   variant="outline"
                   className="w-full border-2 border-green-600 text-green-700 hover:bg-green-50 text-xl py-8 rounded-2xl shadow-lg hover:shadow-xl transform hover:scale-105 transition-all duration-300"
                   size="lg"
                 >
                   <Phone className="w-6 h-6 mr-3" />
-                  +91 9400339998
+                  +91 8281597426
                 </Button>
               </div>
               <div className="mt-8 p-4 bg-green-50 rounded-xl">
